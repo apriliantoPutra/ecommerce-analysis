@@ -1,7 +1,5 @@
 # 📊 E-Commerce Sales Analysis (2023-2025)
 
-> **Analisis data penjualan e-commerce untuk mengidentifikasi tren, produk potensial, efektivitas diskon, dan kualitas operasional.**
-
 ---
 
 ## 📌 Tentang Proyek
@@ -10,12 +8,10 @@ Proyek ini bertujuan untuk menganalisis data penjualan e-commerce periode **Dese
 
 ### 🎯 Tujuan Analisis
 
-| Tujuan | Deskripsi |
-|--------|-----------|
-| **Tren Penjualan** | Mengidentifikasi pola musiman dan faktor-faktor yang mempengaruhi penjualan |
-| **Produk & Wilayah Potensial** | Menemukan kategori produk dan kota paling menguntungkan |
-| **Efektivitas Diskon** | Menganalisis dampak diskon terhadap volume pembelian |
-| **Kualitas Operasional** | Menganalisis status pesanan, pembatalan, dan pengembalian barang |
+- Mengidentifikasi pola musiman dan faktor-faktor yang mempengaruhi penjualan
+- Menemukan kategori produk dan kota paling menguntungkan
+- Menganalisis dampak diskon terhadap volume pembelian
+- Menganalisis status pesanan, pembatalan, dan pengembalian barang
 
 ---
 
@@ -35,30 +31,30 @@ Proyek ini bertujuan untuk menganalisis data penjualan e-commerce periode **Dese
 
 | # | Kolom | Tipe Data | Deskripsi |
 |---|-------|-----------|-----------|
-| 0 | `order_id` | Object | ID unik pesanan |
+| 0 | `order_id` | Text | ID unik pesanan |
 | 1 | `total_qty` | Integer | Jumlah total barang yang dibeli dalam 1 pesanan |
 | 2 | `total_weight_gr` | Integer | Total berat pesanan (gram) |
 | 3 | `total_returned_qty` | Integer | Jumlah barang yang dikembalikan dalam 1 pesanan |
 | 4 | `total_discount` | Integer | Total diskon yang diterima (Rp) |
-| 5 | `product_categories` | Object | Kategori produk yang dibeli |
+| 5 | `product_categories` | Text | Kategori produk yang dibeli |
 | 6 | `num_product_categories` | Integer | Jumlah kategori produk dalam 1 pesanan |
-| 7 | `order_status` | Object | Status pesanan: `Selesai`, `Batal` |
-| 8 | `cancellation` | Object | Alasan pembatalan (jika pesanan batal) |
-| 9 | `shipping_option` | Object | Opsi pengiriman yang dipilih |
-| 10 | `payment_method` | Object | Metode pembayaran: `COD`, `Transfer`, `E-Wallet` |
-| 11 | `city` | Object | Kota pengiriman |
-| 12 | `province` | Object | Provinsi pengiriman |
+| 7 | `order_status` | Text | Status pesanan: `Selesai`, `Batal` |
+| 8 | `cancellation` | Text | Alasan pembatalan (jika pesanan batal) |
+| 9 | `shipping_option` | Text | Opsi pengiriman yang dipilih |
+| 10 | `payment_method` | Text | Metode pembayaran: `COD`, `Transfer`, `E-Wallet` |
+| 11 | `city` | Text | Kota pengiriman |
+| 12 | `province` | Text | Provinsi pengiriman |
 | 13 | `shipping_cost` | Integer | Biaya ongkos kirim yang dibayar (Rp) |
 | 14 | `estimated_shipping_cost_discount` | Integer | Estimasi potongan biaya pengiriman dari platform (Rp) |
 | 15 | `total_payment` | Integer | Total pembayaran customer (Rp) |
 | 16 | `estimated_shipping_cost` | Integer | Estimasi ongkos kirim asli sebelum diskon (Rp) |
 | 17 | `order_time` | DateTime | Waktu pesanan dibuat |
-| 18 | `source_file` | Object | Sumber data (nama file) |
-| 19 | `month_period` | Object | Bulan dan tahun pesanan (format: YYYY-MM) |
-| 20 | `day_of_week` | Object | Hari dalam minggu (Senin, Selasa, dst) |
+| 18 | `source_file` | Text | Sumber data (nama file) |
+| 19 | `month_period` | Text | Bulan dan tahun pesanan (format: YYYY-MM) |
+| 20 | `day_of_week` | Text | Hari dalam minggu (Senin, Selasa, dst) |
 | 21 | `profit` | Integer | Keuntungan bersih per pesanan (Rp) |
-| 22 | `order_segment` | Object | Segmen pesanan berdasarkan jumlah pembelian |
-| 23 | `discount_segment` | Object | Rentang diskon (kategorisasi) |
+| 22 | `order_segment` | Text | Segmen pesanan berdasarkan jumlah pembelian |
+| 23 | `discount_segment` | Text | Rentang diskon (kategorisasi) |
 
 ---
 
